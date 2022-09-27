@@ -1,4 +1,4 @@
-import java.util.concurrent.TimeUnit;
+	import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -12,10 +12,10 @@ public class login_logout {
 		        // Instantiate a ChromeDriver class.
 		        WebDriver driver = new ChromeDriver();
 		        driver.manage().window().maximize();
-				driver.get("https://online.actitime.com/cisco/login.do");
-				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-				driver.findElement(By.id("username")).sendKeys("unique.muralistl@gmail.com");
-				driver.findElement(By.name("pwd")).sendKeys("e#%5Bh44");
+				driver.get("https://online.actitime.com/sdb");
+				driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+				driver.findElement(By.id("username")).sendKeys("amiteshsainilkct@gmail.com");
+				driver.findElement(By.name("pwd")).sendKeys("PTynpJSN");
 				driver.findElement(By.cssSelector("input#keepLoggedInCheckBox")).click();
 				driver.findElement(By.xpath("//a[@id='loginButton']")).click();
 				
