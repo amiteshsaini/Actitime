@@ -9,13 +9,13 @@ public class seleniumelement {
 		public static void main(String[] args) throws InterruptedException {
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/resources/chromedriver_105");
 			WebDriver driver = new ChromeDriver();
-			driver.get("https://online.actitime.com/cisco");
+			driver.get("https://online.actitime.com/sdb");
 			driver.manage().window().maximize();
-			driver.findElement(By.id("username")).sendKeys("unique.muralistl@gmail.com");
-			driver.findElement(By.name("pwd")).sendKeys("e#%5Bh44");
+			driver.findElement(By.id("username")).sendKeys("amiteshsainilkct@gmail.com");
+			driver.findElement(By.name("pwd")).sendKeys("PTynpJSN");
 			driver.findElement(By.name("remember")).click();
 			driver.findElement(By.id("loginButton")).click();
-			WebDriverWait wait = new WebDriverWait(driver,10);
+			WebDriverWait wait = new WebDriverWait(driver,40);
 		    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[text()='Task']")));
 			driver.findElement(By.cssSelector("button[data-tip='Add tasks to the timesheet']")).click();
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[contains(@class,'components-TaskItem')])[1]")));
